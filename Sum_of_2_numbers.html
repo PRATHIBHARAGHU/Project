@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of 2 numbers</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center; /* Centers content both vertically and horizontally in one line */
+            min-height: 90vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .content-container {
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h2>Sum of 2 numbers</h2>        
+    <input type="number" name="n1" id="n1" placeholder="enter number">
+    <input type="number" name="n2" id="n2" placeholder="enter number">
+    <button onclick="add()">ADD</button>
+    <p id="Result"></p>
+    </center>
+    <script>
+        function add(){
+            let a=Number(document.getElementById("n1").value);
+            let b=Number(document.getElementById("n2").value);
+            document.getElementById("Result").innerHTML="Result: "+(a+b);
+            
+        }
+    </script>
+</body>
+</html>
